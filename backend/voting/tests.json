@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "name": "Vote for boy",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "vote_type": "boy"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "vote_type": "boy"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
